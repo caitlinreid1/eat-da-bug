@@ -18,7 +18,7 @@ router.get("/", function(req, res) {
 
 router.post("/", function(req, res) {
   bug.create([
-    "name"
+    "name", "devoured"
   ], [
     req.body.name, req.body.devoured
   ], function() {

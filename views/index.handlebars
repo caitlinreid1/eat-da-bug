@@ -10,10 +10,10 @@
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
-          <button type="submit">YUM</button>
+          <button type="submit">DEVOUR</button>
         </form>
 
-        {{> bug/delete-bug}}
+        
       </li>
     {{/unless}}
   {{/each}}
@@ -29,24 +29,35 @@
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="false">
-          <button type="submit">DEVOUR</button>
+          
         </form>
 
-        {{> bug/delete-bug}}
+        
       </li>
     {{/if}}
   {{/each}}
 </ul>
 
+
+
+
 <h2>Add a Bug</h2>
+
 <form class="create-update-form" action="/" method="POST">
 
   <div class="form-group">
-    <label for="ca">Bug Name:</label>
+    <label for="ca">Cat Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
- 
+  <div class="form-group">
+    
+  </div>
 
-  <button type="submit">Add Bug</button>
+  <button type="submit">Add Cat</button>
 </form>
+
+
+
+
+
